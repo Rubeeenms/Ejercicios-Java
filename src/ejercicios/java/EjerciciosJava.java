@@ -790,10 +790,67 @@ public class EjerciciosJava {
        
         System.out.println("--------------------");
        
-        */
+        
       
-      //--------------------Ejercicio 13 (4.5)--------------------\\
+         //--------------------Ejercicio 13 (4.5)--------------------\\
         System.out.println("Ejercicio 13");
+        
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Introduce el primer numero: ");
+        int a = teclado.nextInt();
+        System.out.print("Introduce el segundo numero: ");
+        int b = teclado.nextInt();
+        System.out.print("Introduce el tercer numero: ");
+        int c = teclado.nextInt();
+
+        int temp;
+
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+        if (b > c) {
+            temp = b;
+            b = c;
+            c = temp;
+        }
+        if (a > b) {
+            temp = a;
+            a = b;
+            b = temp;
+        }
+
+        System.out.println("Numeros ordenados de menor a mayor: " + a + ", " + b + ", " + c);
+        
+        System.out.println("--------------------");
+      
+        
+      //--------------------Ejercicio 14 (4.5)--------------------\\
+        System.out.println("Ejercicio 14");
+      
+        Scanner teclado = new Scanner(System.in);
+         
+        System.out.println("Introduce un numero entero:");
+        
+        int numero = teclado.nextInt();
+        
+        boolean par = numero % 2 == 0;
+        boolean div5 = numero % 5 == 0;
+        
+        if (par && div5) {
+            System.out.println("El numero es par y divisible entre 5");
+        } else if (par) {
+            System.out.println("El numero es par y no es divisible entre 5");
+        } else if (div5) {
+            System.out.println("El numero es divisible entre 5 pero no es par");
+        } else {
+            System.out.println("El numero no es par ni es divisible entre 5");
+        }
+       
+        System.out.println("--------------------");
+        */
       
     }
 }
