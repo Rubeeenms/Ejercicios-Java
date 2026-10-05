@@ -509,20 +509,24 @@ public class EjerciciosJava {
             
             double medias = (x1 + x2 + x3) / 3;
             
-            if (medias <= 4) {
-                System.out.println("La media de las notas es un insuficiente");        
+            if (medias <= 4.9) {
+                System.out.println("La media de las notas es un insuficiente"); 
+                System.out.println("La media es un:" + medias);
             }
             
-            if ((medias >= 5) && (medias <= 6)) {
-                System.out.println("La media de las notas es un suficiente");         
+            if ((medias >= 5) && (medias <= 6.9)) {
+                System.out.println("La media de las notas es un suficiente");
+                System.out.println("La media es un:" + medias);
             }
             
-            if ((medias >= 7) && (medias <=8)) {
-                System.out.println("La media de las notas es un notable");            
+            if ((medias >= 7) && (medias <=8.9)) {
+                System.out.println("La media de las notas es un notable");
+                System.out.println("La media es un:" + medias);
             }
             
             if ((medias >= 9) && (medias <=10)) {
                 System.out.println("La media de las notas es un sobresaliente");
+                System.out.println("La media es un:" + medias);
             }
             
             }
@@ -650,7 +654,7 @@ public class EjerciciosJava {
             }
 
             System.out.println("Tu signo es: " + signo);
-        }  
+        }   
       
       System.out.println("--------------------"); 
       
@@ -851,6 +855,69 @@ public class EjerciciosJava {
        
         System.out.println("--------------------");
         */
+      
+      
+      Scanner teclado = new Scanner(System.in);
+      
+      
+      System.out.print("Introduce un caracter (letra, numero o simbolo): ");
+      
+      String c = teclado.next();
+      
+      System.out.println("¿Hacia donde apunta el vertice?");
+      System.out.println("1. Arriba");
+      System.out.println("2. Abajo");
+      System.out.println("3. Izquierda");
+      System.out.println("4. Derecha");
+      System.out.print("Elige una opcion: ");
+      
+      int opcion = teclado.nextInt();
+      
+              switch (opcion) {
+            case 1:
+                
+                System.out.println("    " + c);
+                System.out.println("   " + c + c + c);
+                System.out.println("  " + c + c + c + c + c);
+                System.out.println(" " + c + c + c + c + c + c + c);
+                System.out.println(c + c + c + c + c + c + c + c + c);
+                break;
+            case 2:
+                
+                System.out.println(c + c + c + c + c + c + c + c + c);
+                System.out.println(" " + c + c + c + c + c + c + c);
+                System.out.println("  " + c + c + c + c + c);
+                System.out.println("   " + c + c + c);
+                System.out.println("    " + c);
+                break;
+            case 3:
+                
+                System.out.println("    " + c);
+                System.out.println("   " + c + c);
+                System.out.println("  " + c + c + c);
+                System.out.println(" " + c + c + c + c);
+                System.out.println(c + c + c + c + c);
+                System.out.println(" " + c + c + c + c);
+                System.out.println("  " + c + c + c);
+                System.out.println("   " + c + c);
+                System.out.println("    " + c);
+                break;
+            case 4:
+                
+                System.out.println(c);
+                System.out.println(c + c);
+                System.out.println(c + c + c);
+                System.out.println(c + c + c + c);
+                System.out.println(c + c + c + c + c);
+                System.out.println(c + c + c + c);
+                System.out.println(c + c + c);
+                System.out.println(c + c);
+                System.out.println(c);
+                break;
+            default:
+                System.out.println("Opción no válida.");
+        }
+
       
     }
 }
