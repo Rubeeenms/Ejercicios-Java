@@ -922,14 +922,14 @@ public class EjerciciosJava {
         
         System.out.println("--------------------");
 
-      
+
       
       //--------------------Ejercicio 16 (4.5)--------------------\\
         System.out.println("Ejercicio 16");
       
         Scanner teclado = new Scanner(System.in);
         
-        int puntos = 0;
+        double puntos = 0;
         int respuesta;
 
         System.out.println("CUESTIONARIO");
@@ -974,6 +974,6 @@ public class EjerciciosJava {
         System.out.println("La probabilidad de que sea infiel es de  " + puntos + " %");
         
         }
-        */
+              */
     }
 }
