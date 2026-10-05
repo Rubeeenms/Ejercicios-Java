@@ -974,6 +974,195 @@ public class EjerciciosJava {
         System.out.println("La probabilidad de que sea infiel es de  " + puntos + " %");
         
         }
-              */
+       
+        System.out.println("--------------------");
+              
+         
+        //--------------------Ejercicio 17 (4.5)--------------------\\
+        System.out.println("Ejercicio 17");
+      
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Introduce un número entero: ");
+        int numero = s.nextInt();
+
+        // Si es negativo lo pasamos a positivo para que el resto no salga negativo
+        if (numero < 0) {
+            numero = -numero;
+        }
+
+        // El resto de dividir entre 10 es la última cifra
+        int ultimaCifra = numero % 10;
+
+        System.out.println("La última cifra es " + ultimaCifra);
+        
+         System.out.println("--------------------");
+
+        //--------------------Ejercicio 18 (4.5)--------------------\\
+        System.out.println("Ejercicio 18");
+       
+       Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("Introduce un número entero (hasta 5 cifras): ");
+        int numero = teclado.nextInt();
+ 
+        if (numero < 0) {
+            numero = -numero;
+        }
+ 
+        int primeraCifra;
+ 
+        if (numero >= 10000) {
+            primeraCifra = numero / 10000;
+        } else if (numero >= 1000) {
+            primeraCifra = numero / 1000;
+        } else if (numero >= 100) {
+            primeraCifra = numero / 100;
+        } else if (numero >= 10) {
+            primeraCifra = numero / 10;
+        } else {
+            primeraCifra = numero;
+        }
+ 
+        System.out.println("La primera cifra es " + primeraCifra);
+        
+                 System.out.println("--------------------");
+      
+                //--------------------Ejercicio 19 (4.5)--------------------\\
+        System.out.println("Ejercicio 19");
+      
+        Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("Introduce un número entero (hasta 5 dígitos): ");
+        int numero = teclado.nextInt();
+ 
+        if (numero < 0) {
+            numero = -numero;
+        }
+ 
+        int digitos;
+ 
+        if (numero >= 10000) {
+            digitos = 5;
+        } else if (numero >= 1000) {
+            digitos = 4;
+        } else if (numero >= 100) {
+            digitos = 3;
+        } else if (numero >= 10) {
+            digitos = 2;
+        } else {
+            digitos = 1;
+        }
+ 
+        System.out.println("El número tiene " + digitos + " dígito(s)");
+
+                 System.out.println("--------------------");
+
+        
+                //--------------------Ejercicio 20 (4.5)--------------------\\
+        System.out.println("Ejercicio 20");      
+      
+        Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("Introduce un número entero positivo (hasta 5 cifras): ");
+        int numero = teclado.nextInt();
+ 
+        // Separamos las cifras: a b c d e (de izquierda a derecha)
+        int a = numero / 10000;
+        int b = numero / 1000 % 10;
+        int c = numero / 100 % 10;
+        int d = numero / 10 % 10;
+        int e = numero % 10;
+ 
+        boolean capicua;
+ 
+        // Según el número de cifras, comparamos las que deben coincidir
+        if (numero >= 10000) {
+            capicua = (a == e) && (b == d);
+        } else if (numero >= 1000) {
+            capicua = (b == e) && (c == d);
+        } else if (numero >= 100) {
+            capicua = (c == e);
+        } else if (numero >= 10) {
+            capicua = (d == e);
+        } else {
+            capicua = true; // un número de una cifra siempre es capicúa
+        }
+ 
+        if (capicua) {
+            System.out.println("El número " + numero + " es capicúa");
+        } else {
+            System.out.println("El número " + numero + " no es capicúa");
+        }
+        
+                 System.out.println("--------------------");
+        
+                //--------------------Ejercicio 21 (4.5)--------------------\\
+        System.out.println("Ejercicio 21");      
+        
+        Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("Nota del primer examen: ");
+        double nota1 = Double.parseDouble(teclado.nextLine());
+ 
+        System.out.print("Nota del segundo examen: ");
+        double nota2 = Double.parseDouble(teclado.nextLine());
+ 
+        double media = (nota1 + nota2) / 2;
+ 
+        if (media >= 5) {
+            System.out.println("Tu nota de Programación es " + media);
+        } else {
+            System.out.print("¿Cuál ha sido el resultado de la recuperación? (apto/no apto): ");
+            String resultado = teclado.nextLine();
+ 
+            if (resultado.equals("apto")) {
+                System.out.println("Tu nota de Programación es 5");
+            } else {
+                System.out.println("Tu nota de Programación es " + media);
+            }
+        }
+        
+                 System.out.println("--------------------");
+
+        
+         Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Día de la semana (lunes a viernes): ");
+        String dia = teclado.nextLine();
+
+        System.out.print("Hora: ");
+        int horas = Integer.parseInt(teclado.nextLine());
+
+        System.out.print("Minutos: ");
+        int minutos = Integer.parseInt(teclado.nextLine());
+
+        int diasTranscurridos = 0;
+
+        if (dia.equals("lunes")) {
+            diasTranscurridos = 0;
+        } else if (dia.equals("martes")) {
+            diasTranscurridos = 1;
+        } else if (dia.equals("miércoles") || dia.equals("miercoles")) {
+            diasTranscurridos = 2;
+        } else if (dia.equals("jueves")) {
+            diasTranscurridos = 3;
+        } else if (dia.equals("viernes")) {
+            diasTranscurridos = 4;
+        }
+
+        // Minutos desde el lunes a las 00:00 hasta el momento introducido
+        int minutosActuales = diasTranscurridos * 24 * 60 + horas * 60 + minutos;
+
+        // Minutos desde el lunes a las 00:00 hasta el viernes a las 15:00
+        int minutosFinSemana = 4 * 24 * 60 + 15 * 60;
+
+        int faltan = minutosFinSemana - minutosActuales;
+
+        System.out.println("Faltan " + faltan + " minutos para el fin de semana");
+      
+                 System.out.println("--------------------");
+            */
+        
     }
 }
