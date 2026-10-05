@@ -854,7 +854,7 @@ public class EjerciciosJava {
         }
        
         System.out.println("--------------------");
-        */
+        
       
       
       Scanner teclado = new Scanner(System.in);
@@ -917,7 +917,11 @@ public class EjerciciosJava {
             default:
                 System.out.println("Opción no válida.");
         }
-
+        
+        
+        
+        System.out.println("--------------------");
+        */
       
     }
 }
