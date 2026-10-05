@@ -855,6 +855,8 @@ public class EjerciciosJava {
        
         System.out.println("--------------------");
         
+       //--------------------Ejercicio 15 (4.5)--------------------\\
+        System.out.println("Ejercicio 15");
       
       
       Scanner teclado = new Scanner(System.in);
@@ -919,7 +921,59 @@ public class EjerciciosJava {
         }
         
         System.out.println("--------------------");
-        */
+
       
+      
+      //--------------------Ejercicio 16 (4.5)--------------------\\
+        System.out.println("Ejercicio 16");
+      
+        Scanner teclado = new Scanner(System.in);
+        
+        int puntos = 0;
+        int respuesta;
+
+        System.out.println("CUESTIONARIO");
+        System.out.println("Responde con el número de la opción (1, 2 o 3)");
+        
+        
+        System.out.println("¿Cuando estas cerca de ella pone el movil boca abajo?");
+        System.out.println("   1) Verdadero");
+        System.out.println("   2) Falso");
+        respuesta = teclado.nextInt();
+        if (respuesta == 1) {
+            puntos = puntos + 3;
+            
+        System.out.println("2. ¿Suele salir mucho con amigos sin avisarte?");
+        System.out.println("   1) Verdadero");
+        System.out.println("   2) Falso");
+        respuesta = teclado.nextInt();
+        if (respuesta == 1) {
+            puntos = puntos + 3;
+        }
+
+        System.out.println("3. ¿Te suele ocultar cosas?");
+        System.out.println("   1) Verdadero");
+        System.out.println("   2) Falso");
+        respuesta = teclado.nextInt();
+        if (respuesta == 1) {
+            puntos = puntos + 3;
+        }
+
+        System.out.println("4. ¿Se molesta por que le preguntas con quien ha estado?");
+        System.out.println("   1) Verdadero");
+        System.out.println("   2) Falso");
+        respuesta = teclado.nextInt();
+        if (respuesta == 1) {
+            puntos = puntos + 3;
+        }
+
+        puntos = puntos / 12;
+        puntos = puntos * 100;
+        
+        System.out.println();
+        System.out.println("La probabilidad de que sea infiel es de  " + puntos + " %");
+        
+        }
+        */
     }
 }
