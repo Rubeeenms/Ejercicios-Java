@@ -16,9 +16,9 @@ public class EjerciciosJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       // TODO code application logic here
-        
-      /* --------------------Ejercicio 1 (2.5)--------------------\\
+        // TODO code application logic here
+
+        /* --------------------Ejercicio 1 (2.5)--------------------\\
         System.out.println("Ejercicio 1");
 
         int x;
@@ -1098,22 +1098,22 @@ public class EjerciciosJava {
          System.out.println("--------------------");
 
         //--------------------Ejercicio 21 (4.5)--------------------\\
-        System.out.println("Ejercicio 21");      
-        
+        System.out.println("Ejercicio 21");
+
         Scanner teclado = new Scanner(System.in);
- 
+
         System.out.print("Nota del primer examen: ");
         double nota1 = teclado.nextDouble();
- 
+
         System.out.print("Nota del segundo examen: ");
         double nota2 = teclado.nextDouble();
- 
+
         double media = (nota1 + nota2) / 2;
- 
-        if ((nota1 < 0) || (nota2 <0 )) {
+
+        if ((nota1 < 0) || (nota2 < 0)) {
             System.out.println("La notas no pueden ser menor a 0");
         }
-        
+
         if ((nota1 > 10) || (nota1 > 10)) {
             System.out.println("Las notas no pueden ser mayor a 10");
         } else if (media >= 5) {
@@ -1121,16 +1121,74 @@ public class EjerciciosJava {
         } else {
             System.out.print("¿Cual ha sido el resultado de la recuperacion? (apto/no apto): ");
             String resultado = teclado.next();
- 
+
             if (resultado.equals("apto")) {
                 System.out.println("Tu nota de Programacion es 5");
             } else {
                 System.out.println("Tu nota de Programacion es " + media);
             }
         }
+
+        System.out.println("--------------------");
+         
+
+        //Ejercicios Alternativos (Boletin Alternativo Tema 4)
+        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        //--------------------Ejercicio 1 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 1");
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("¿Qué edad tienes? ");
+        int edad = teclado.nextInt();
+
+        String acompanado = "no";
+
+        if (edad < 18) {
+            System.out.print("¿Vienes acompañado por un adulto? (si/no): ");
+            acompanado = teclado.nextLine();
+        }
+
+        if ((edad >= 18) || (acompanado.equals("si"))) {
+            System.out.println("Acceso permitido");
+        } else {
+            System.out.println("Acceso denegado");
+        }
+        System.out.println("--------------------");
+
+        //--------------------Ejercicio 2 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 2");
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Estado del servidor (online, mantenimiento, caido, reiniciando): ");
+        String estadoServer = teclado.nextLine();
+
+        switch (estadoServer) {
+            case "online":
+                System.out.println("El server esta funcionando");
+                break;
+            case "mantenimiento":
+                System.out.println("El server esta en mantenimiento");
+                break;
+            case "caido":
+                System.out.println("El server esta caido");
+                break;
+            case "reiniciando":
+                System.out.println("El server esta reiniciandose");
+                break;
+            default:
+                System.out.println("Estado desconocido");
+        }
+        System.out.println("--------------------");
+         */
         
-         System.out.println("--------------------");
-        */    
+        //--------------------Ejercicio 3 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 3");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Introduce el ususario:");
+        String usuario = 
+        
         
     }
 }
