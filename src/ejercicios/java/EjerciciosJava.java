@@ -1179,16 +1179,113 @@ public class EjerciciosJava {
                 System.out.println("Estado desconocido");
         }
         System.out.println("--------------------");
-         */
+
         
         //--------------------Ejercicio 3 (Boletin Alternativo T4)--------------------\\
         System.out.println("Ejercicio 3");
         
         Scanner teclado = new Scanner(System.in);
         
-        System.out.println("Introduce el ususario:");
-        String usuario = 
+        String usuarioBien = "admin";
+        String passwordBien = "java123";
+ 
+        System.out.print("Usuario: ");
+        String usuario = teclado.nextLine();
+ 
+        System.out.print("Contraseña: ");
+        String password = teclado.nextLine();
+ 
+        // V1
+        if (usuario.equals(usuarioBien)) {
+            if (password.equals(passwordBien)) {
+                System.out.println("Bienvenido al sistema");
+            } else {
+                System.out.println("Contraseña incorrecta");
+            }
+        } else {
+            System.out.println("Usuario desconocido");
+        }
+ 
+        // V2
+        /*
+        if (usuario.equals(usuarioBien) && password.equals(passwordBien)) {
+            System.out.println("Bienvenido al sistema");
+        } else if (usuario.equals(usuarioBien)) {
+            System.out.println("Contraseña incorrecta");
+        } else {
+            System.out.println("Usuario desconocido");
+        }
+
+
+        System.out.println("--------------------");
+
         
+        //--------------------Ejercicio 4 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 4");
+        
+                Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("GB de RAM: ");
+        int ram = teclado.nextInt();
+        
+        if (ram <=0) {
+            System.out.println("Introduce un numero correcto de ram");
+        }
+        
+        System.out.print("Sistema operativo (windows, linux o mac): ");
+        String sistema = teclado.nextLine();
+ 
+        System.out.print("¿La grafica es compatible? (si/no): ");
+        String grafica = teclado.nextLine();
+ 
+
+        if (ram >= 8 && sistema.equals("windows") && grafica.equals("si")) {
+            System.out.println("Tu equipo puede ejecutar el juego");
+        } else if (ram < 8) {
+            System.out.println("Necesitas más memoria RAM");
+        } else if (!sistema.equals("windows")) {
+            System.out.println("Sistema operativo no compatible");
+        } else {
+            System.out.println("Tarjeta gráfica no compatible");
+        }
+
+        System.out.println("--------------------");
+        
+        //--------------------Ejercicio 5 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 5");
+        
+        Scanner teclado = new Scanner(System.in);
+ 
+        System.out.print("¿El equipo enciende? (si/no): ");
+        boolean enciende = teclado.nextLine().equals("si");
+ 
+        System.out.print("¿Hay conexión a Internet? (si/no): ");
+        boolean hayInternet = teclado.nextLine().equals("si");
+ 
+        System.out.print("¿El problema afecta a varios usuarios? (si/no): ");
+        boolean variosUsuarios = teclado.nextLine().equals("si");
+ 
+
+        if (!enciende) {
+            System.out.println("Revisar alimentación o hardware");
+        } else if (hayInternet) {
+            System.out.println("La conexión de red funciona correctamente");
+        } else if (variosUsuarios) {
+            System.out.println("Posible incidencia de red general");
+        } else {
+            System.out.println("Revisar configuración de red del equipo");
+        }
+        
+        System.out.println("--------------------");
+
+        
+        //--------------------Ejercicio 6 (Boletin Alternativo T4)--------------------\\
+        System.out.println("Ejercicio 6");
+        
+        */
+        
+        
+
         
     }
 }
