@@ -4,8 +4,6 @@
  */
 package aprendejava;
 
-import java.util.Scanner;
-
 /**
  *
  * @author mañana
@@ -16,7 +14,23 @@ public class AprendeJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+/*       
+----------------------------------------------------------------  I N D I C E  ----------------------------------------------------------------
+
+                                                                        1- Salida de datos por pantalla
+
+                                                                        2- Variables
+
+                                                                        3- LeerTeclado
+
+                                                                        4- If / Switch
+
+                                                                        5- Bucles
+
+                                                                        6- Numeros Aleatorios
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+*/
     }
     
 }
