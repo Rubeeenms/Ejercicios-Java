@@ -17,17 +17,17 @@ public class AprendeJava {
 /*       
 ----------------------------------------------------------------  I N D I C E  ----------------------------------------------------------------
 
-                                                                        1- Salida de datos por pantalla
+                                                            1- Salida de datos por pantalla
 
-                                                                        2- Variables
+                                                            2- Variables
 
-                                                                        3- LeerTeclado
+                                                            3- LeerTeclado
 
-                                                                        4- If / Switch
+                                                            4- If / Switch
 
-                                                                        5- Bucles
+                                                            5- Bucles
 
-                                                                        6- Numeros Aleatorios
+                                                            6- Numeros Aleatorios
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 */
