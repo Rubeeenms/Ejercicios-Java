@@ -301,7 +301,7 @@ public class NumerosAleatorios {
         System.out.println("Numero de bienes: " + bien);
         System.out.println("Numero de notables: " + notable);
         System.out.println("Numero de sobresalientes: " + sobresaliente);
-
+*/
         //--------------------Ejercicio 12 (6.3)--------------------\\
         System.out.println("Ejercicio 12");
 
@@ -315,7 +315,7 @@ public class NumerosAleatorios {
             }
             System.out.println();
         }
-
+/*
         //--------------------Ejercicio 13 (6.3)--------------------\\
         System.out.println("Ejercicio 13");
 
