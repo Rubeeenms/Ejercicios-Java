@@ -30,8 +30,21 @@ public class AprendeJava {
                                                             6- Numeros Aleatorios
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------- Especificadores De Formato  --------------------------------------------------
+
+Especificador	Para qué sirve                                  Ejemplo
+
+%d                              Entero (int, long)                                    42
+%f                               Decimal (double, float)                           3.141593
+%s                              Texto (String, y casi cualquier objeto)    Hola
+%c                              Un solo carácter (char)	                          A
+%b                              Booleano                                                true
+%n                              Salto de línea (como \n, pero portable)	
+%%                             Imprime un símbolo % literal                     %
+
+------------------------------------------------------------------------------------------------------------------------------------------------
 */
-        System.out.println("hola");
     }
     
 }
