@@ -304,6 +304,7 @@ public class Arrays {
         no son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar
         el array resultante.
          */
+/*
         Scanner teclado = new Scanner(System.in);
         int[] num = new int[10];
         
@@ -313,9 +314,54 @@ public class Arrays {
             num[i] = teclado.nextInt();
         }
         
-        System.out.println("Indice" + "\t0" + "\t1" + "\t2" + "\t3" + "\t4" + "\t5" + "\t6" + "\t7" + "\t8" + "\t9");
+        // bucle para el "indice"
+        System.out.print("Indice");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("\t" + i);
+        }
+        System.out.println();
+        // bucle para el "valor" sin ordenar por los primos
+        System.out.print("Valor");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("\t" + num[i]);
+        }
+        System.out.println();
+        
+        // bucle para ordenar los primos
+        System.out.println("Ordenados");
+        int[] ordenado = new int[10];
+        int inicio = 0;
+        int fin = 9;
+
+        for (int i = 0; i < 10; i++) {
+            boolean primo = num[i] > 1;
+
+            for (int j = 2; j < num[i]; j++) {
+                if (num[i] % j == 0) {
+                    primo = false;
+                }
+            }
+
+            if (primo) {
+                ordenado[inicio] = num[i];
+                inicio++;
+            } else {
+                ordenado[fin] = num[i];
+                fin--;
+            }
+        }
+        System.out.print("Indice");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("\t" + i);
+        }
+        System.out.println();
+
+        System.out.print("Valor");
+        for (int i = 0; i < 10; i++) {
+            System.out.print("\t" + ordenado[i]);
+        }
         System.out.println(" ");
-        System.out.println("Valor" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t");
+*/
     }
 
 }
