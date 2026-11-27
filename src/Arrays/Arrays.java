@@ -314,6 +314,7 @@ public class Arrays {
         }
         
         System.out.println("Indice" + "\t0" + "\t1" + "\t2" + "\t3" + "\t4" + "\t5" + "\t6" + "\t7" + "\t8" + "\t9");
+        System.out.println(" ");
         System.out.println("Valor" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t");
     }
 
