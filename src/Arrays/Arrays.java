@@ -184,7 +184,7 @@ public class Arrays {
         primer valor por el segundo en la lista generada anteriormente. Los números
         que se han cambiado deben aparecer entrecomillados..
          */
-/*
+ /*
         Scanner teclado = new Scanner(System.in);
         int[] numeros = new int[100];
         boolean[] cambiado = new boolean[100];   // por defecto todo false
@@ -225,7 +225,7 @@ public class Arrays {
             }
         }
         System.out.println();
-*/
+         */
         //--------------------Ejercicio 8 (7.4.1)--------------------\\
 /*        
         Realiza un programa que pida la temperatura media que ha hecho en cada mes
@@ -233,8 +233,88 @@ public class Arrays {
         horizontales con esos datos. Las barras del diagrama se pueden dibujar a base
         de asteriscos o cualquier otro carácter.
          */
+ /*
+        Scanner teclado = new Scanner(System.in);
+        String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        int[] temperatura = new int[12];
 
+// 1. Leer las temperaturas
+        for (int i = 0; i < 12; i++) {
+            System.out.print("Temperatura media de " + meses[i] + ": ");
+            temperatura[i] = teclado.nextInt();
+        }
+
+// 2. Dibujar el diagrama de barras horizontales
+        System.out.println("Temperaturas medias:");
+        for (int i = 0; i < 12; i++) {
+            System.out.printf("%-12s\t", meses[i]);
+            for (int j = 0; j < temperatura[i]; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" " + temperatura[i]);
+        }
+         */
+        //--------------------Ejercicio 9 (7.4.1)--------------------\\
+/*        
+        Realiza un programa que pida 8 números enteros y que luego muestre esos
+        números junto con la palabra “par” o “impar” según proceda.
+         */
+ /*
+        Scanner teclado = new Scanner(System.in);
+        int[] num = new int[8];
+
+        // bucle para los 8 nº
+        for (int i = 0; i < 8; i++) {
+            System.out.print("Introduce el numero " + (i + 1) + ": ");
+            num[i] = teclado.nextInt();
+        }
+
+        // bucle de sout
+        System.out.println("\nNumeros introducidos:");
+        for (int i = 0; i < 8; i++) {
+            if (num[i] % 2 == 0) {
+                System.out.println(num[i] + "  par");
+            } else {
+                System.out.println(num[i] + "  impar");
+            }
+        }       
+         */
+        //--------------------Ejercicio 10 (7.4.1)--------------------\\
+/*        
+        Escribe un programa que genere 20 números enteros aleatorios entre 0 y 100
+        y que los almacene en un array. El programa debe ser capaz de pasar todos
+        los números pares a las primeras posiciones del array (del 0 en adelante) y
+        todos los números impares a las celdas restantes. Utiliza arrays auxiliares si
+        es necesario.
+         */
+/*
+        int[] num = new int[20];
+
+        for (int i = 0; i < 20; i++) {
+            num[i] = (int) (Math.random() * 101);             //  nº entre 0 y 100
+        }
+*/
+        //--------------------Ejercicio 11 (7.4.1)--------------------\\
+/*        
+        Realiza un programa que pida 10 números por teclado y que los almacene en
+        un array. A continuación se mostrará el contenido de ese array junto al índice
+        (0 – 9) utilizando para ello una tabla. Seguidamente el programa pasará los
+        primos a las primeras posiciones, desplazando el resto de números (los que
+        no son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar
+        el array resultante.
+         */
+        Scanner teclado = new Scanner(System.in);
+        int[] num = new int[10];
         
+        System.out.println("Dime diez numeros enteros");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Numero " + (i + 1 + ":"));
+            num[i] = teclado.nextInt();
+        }
+        
+        System.out.println("Indice" + "\t0" + "\t1" + "\t2" + "\t3" + "\t4" + "\t5" + "\t6" + "\t7" + "\t8" + "\t9");
+        System.out.println("Valor" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t" + "\t");
     }
 
 }
